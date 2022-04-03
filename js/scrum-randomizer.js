@@ -4,7 +4,7 @@ var teams = {
     'Henry',
     'Higgins',
     'Holly',
-    'Irina',
+    // 'Irina',
     'Katheryn',
     'Kevin',
     'Richard',
