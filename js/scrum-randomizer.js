@@ -1,20 +1,22 @@
 var teams = {
-    'CFRPI': [
-      'A.J.',
-      'Amy',
-      'Carol',
-      'Chuck',
-      'Darius',
-      'Julie/Allison',
-      'Tommi'
-    ]
+  'DPT': [
+    'Ans',
+    'Henry',
+    'Higgins',
+    'Holly',
+    'Irina',
+    'Katheryn',
+    'Kevin',
+    'Richard',
+    'Whorton'
+  ]
 }
-    today = new Date();
+  today = new Date();
 
 function getNextName( team ) {
   var n = today.getDate() + today.getMonth() + today.getFullYear(),
-      i = n % ( team.length ),
-      name = team[i];
+    i = n % ( team.length ),
+    name = team[i];
   $( '#team-order' ).append( '<li>' + name + '</li>' );
   team.splice( i, 1 );
 };
